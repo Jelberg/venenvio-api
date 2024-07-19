@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "b44c9320-2c2d-49d6-9a80-bdeec7b29d4d",
+		"name": "Venenvio API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30802958",
+		"_collection_link": "https://galactic-comet-432106.postman.co/workspace/Venenvio-API~2013a96a-45e6-4fe7-8a58-52648a0b4ff2/collection/30802958-b44c9320-2c2d-49d6-9a80-bdeec7b29d4d?action=share&source=collection_link&creator=30802958"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Forgot Password",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"thejessidev@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/auth/forgot-password",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"auth",
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"thejessidev@gmail.com\",\r\n    \"password\":\"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/auth/login",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Password",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"thejessidev@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/auth/forgot-password",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"auth",
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
